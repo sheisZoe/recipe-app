@@ -33,7 +33,11 @@ export default async function Recipies({ searchParams }: Props) {
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbPage>Recipies</BreadcrumbPage>
+            <BreadcrumbLink href="/recipies">Recipies</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+          <BreadcrumbLink href="/favourite">Favourite</BreadcrumbLink>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>

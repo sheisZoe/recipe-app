@@ -15,6 +15,7 @@ export function Header() {
       </Link>
       <SearchHeader className="hidden md:flex" />
       <div className="flex gap-4 items-center">
+       <Link  href={"/favourite"}><Bookmark /> </Link>  
         <Toggle />
         <Link href={"/upload"}>
           <Button className=" p-6 py-3 rounded border border-border">
