@@ -71,17 +71,14 @@ export function SuggestedRecipes({ search }: SuggestedRecipesProps) {
             <div className="flex gap-2 items-center w-full hover:bg-card/70">
               <div className=" w-12 h-12 rounded-full">
                 <img
-                  src={p.image}
+                  src={p.image[0].url}
                   alt={p.name}
                   className="w-full h-full object-cover rounded-full"
                 />
               </div>
               <div className="flex-1">
                 <h2 className="text-sm font-medium">{p.name}</h2>
-                <p className="text-xs text-muted-foreground">{p.cuisine}</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <Rating value={p.rating} readOnly />
+                <p className="text-xs text-muted-foreground">{p.name}</p>
               </div>
             </div>
           </Link>

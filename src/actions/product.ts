@@ -178,6 +178,7 @@ export async function getRelatedProducts(cuisine: string) {
       select: {
         id: true,
         name: true,
+        description: true,
         image: {
           select: {
             id: true,

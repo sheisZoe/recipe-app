@@ -218,7 +218,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "C:\\Users\\ogbon\\Downloads\\main recipe app\\src\\lib\\prisma\\generated",
+      "value": "C:\\Users\\ogbon\\OneDrive\\Documents\\GitHub\\recipe-app\\src\\lib\\prisma\\generated",
       "fromEnvVar": null
     },
     "config": {
@@ -235,11 +235,12 @@ const config = {
     "previewFeatures": [
       "fullTextSearchPostgres"
     ],
-    "sourceFilePath": "C:\\Users\\ogbon\\Downloads\\main recipe app\\prisma\\schema.prisma",
+    "sourceFilePath": "C:\\Users\\ogbon\\OneDrive\\Documents\\GitHub\\recipe-app\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": null
+    "rootEnvPath": null,
+    "schemaEnvPath": "../../../../.env"
   },
   "relativePath": "../../../../prisma",
   "clientVersion": "6.16.2",
@@ -248,7 +249,7 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
-  "postinstall": true,
+  "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {

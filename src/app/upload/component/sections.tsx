@@ -1,7 +1,7 @@
 'use client';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
-import { ProductFormInput } from '@/lib/validators/auth';
+import { ProductFormInput } from '@/lib/validators/product';
 import { Plus, Trash } from 'lucide-react';
 import React from 'react';
 import { UseFormReturn } from 'react-hook-form';
@@ -9,7 +9,7 @@ import { toast } from 'sonner';
 
 interface ProductSectionProps {
 	form: UseFormReturn<ProductFormInput>;
-	type: 'benefits' | 'ingredients' | 'directions';
+	type: 'ingredients' | 'instructions';
 }
 
 export function ProductSection(props: ProductSectionProps) {

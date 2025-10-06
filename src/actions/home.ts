@@ -8,6 +8,7 @@ export async function getHomeProducts() {
       select: {
         id: true,
         name: true,
+        description: true,
         image: {
           select: {
             id: true,
