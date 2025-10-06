@@ -287,3 +287,39 @@ export async function createProduct(
     };
   }
 }
+
+export async function handleLike(productId:string){
+  try {
+    if(!productId) throw Error("Invalid product ID")
+    const fav = await prisma.favorite.findFirst({
+      where: {
+        productId
+      },
+      select: {
+        id: true
+      }
+    })
+    if(fav){
+      await prisma.favorite.delete({
+        where: {
+          id: fav.id
+        }
+      })
+      return "Product removed successfully"
+    }
+    else {
+      await prisma.favorite.create({
+        data: {
+          products: {
+            connect: {
+              id: productId
+            }
+          }
+        }
+      })
+      return "Product liked successfully"
+    }
+  } catch (error) {
+    throw Error("Error occuried")
+  }
+}
