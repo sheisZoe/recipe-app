@@ -123,7 +123,7 @@ export function Filter({ filterDataPromise, params }: FilterProps) {
         <div
           className={cn(
             "flex flex-col gap-2 py-2 overflow-y-scroll scroll-smooth",
-            cuisines?.length > 10 ? "h-32" : "h-28"
+            cuisines?.length > 10 ? "h-32" : "h-12"
           )}
         >
           {cuisines

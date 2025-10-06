@@ -22,6 +22,7 @@ export function Trending({ trending }: ProductsProps) {
           <Product
             key={i}
             data={p}
+            disableLike
             className="w-[240px] md:w-[280px] shrink-0"
           />
         ))}

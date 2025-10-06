@@ -127,7 +127,7 @@ export function MobileFilter({ filterDataPromise, params }: FilterProps) {
 
   return (
     <Drawer direction="right">
-      <DrawerTrigger>
+      <DrawerTrigger className="md:hidden">
         <ListFilter />
       </DrawerTrigger>
       <DrawerContent>
