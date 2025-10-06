@@ -5,13 +5,13 @@ import { cn } from "@/lib/utils";
 import { SuggestedRecipes } from "./suggested";
 import { useRouter } from "next/navigation";
 
-export function SearchHeader() {
+export function SearchHeader({className}: {className?: string}) {
   const router = useRouter();
   const [search, setSearch] = useState("");
   const isTyping = useMemo(() => search?.length > 1, [search]);
   return (
-    <div className="flex-1 flex justify-center">
-      <div className=" w-1/2 flex relative">
+    <div className={cn("flex-1 flex justify-center", className)}>
+      <div className=" w-3/4 md:w-1/2 flex relative">
         <form
           onSubmit={(e) => {
             e.preventDefault();

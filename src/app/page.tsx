@@ -8,7 +8,7 @@ import Footer from "@/components/shared/footer";
 export default async function Home() {
   const data = await getHomeProducts();
   return (
-    <div className="flex flex-col gap-8 md:gap-16 pb-16 mx-auto max-w-[1500px]">
+    <div className="flex flex-col gap-8 md:gap-16 md:pb-16 mx-auto max-w-[1500px]">
       <Hero />
       <Trending trending={data.trending} />
       <Featured featured={data.featured} />

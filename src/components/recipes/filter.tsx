@@ -116,10 +116,10 @@ export function Filter({ filterDataPromise, params }: FilterProps) {
   }, [params]);
 
   return (
-    <Card className="w-80 p-4 min-h-[60dvh] h-fit sticky top-4 space-y-1">
+    <Card className="hidden md:block md:w-80 p-4 min-h-[60dvh] h-fit sticky top-4 space-y-1">
       {/* Cuisine */}
       <div className="space-y-1">
-        <h2 className="text-md font-semibold">Cuisines</h2>
+        <h2 className="text-sm md:text-md font-semibold">Cuisines</h2>
         <div
           className={cn(
             "flex flex-col gap-2 py-2 overflow-y-scroll scroll-smooth",
@@ -161,7 +161,7 @@ export function Filter({ filterDataPromise, params }: FilterProps) {
 
       {/* Meal Type */}
       <div className="space-y-1">
-        <h2 className="text-md font-semibold">Meal Type</h2>
+        <h2 className="text-sm md:text-md font-semibold">Meal Type</h2>
         <div
           className={cn(
             "flex flex-col gap-2 py-2 overflow-y-scroll scroll-smooth",
@@ -201,7 +201,7 @@ export function Filter({ filterDataPromise, params }: FilterProps) {
 
       {/* Difficulty Level */}
       <div className="space-y-1">
-        <h2 className="text-md font-semibold">Difficulty Level</h2>
+        <h2 className="text-sm md:text-md font-semibold">Difficulty Level</h2>
         <div className="flex flex-col gap-2 py-2">
           {["Easy", "Medium", "Hard"].map((lvl) => (
             <div key={lvl} className="flex items-center gap-2">
@@ -293,7 +293,7 @@ export function RangeSlider({
   );
   return (
     <div className="space-y-4" {...stopProps}>
-      <p className="text-md font-semibold">
+      <p className="text-sm md:text-md font-semibold">
         {title} <span className="text-xs">(Minutes)</span>
       </p>
       <div className="px-2">

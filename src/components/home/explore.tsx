@@ -13,11 +13,11 @@ export function Explore() {
           <div
             className={cn(
               "flex flex-col gap-4",
-              i == 1 && "flex-col-reverse mt-20 md:mt-32"
+              i == 1 && "md:flex-col-reverse mt-20 md:mt-32"
             )}
             key={e.id}
           >
-            <div className="w-full h-40 md:h-80 rounded-xl">
+            <div className="w-full h-60 md:h-80 rounded-xl">
               <img
                 src={e.image}
                 alt={e.title}

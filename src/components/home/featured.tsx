@@ -21,7 +21,7 @@ export function Featured({ featured }: ProductsProps) {
           <ChevronRight />
         </Link>
       </div>
-      <div className=" px-4 grid grid-cols-4 gap-4">
+      <div className=" px-4 grid grid-cols-2 md:grid-cols-4 gap-4">
         {featured?.map((p, i) => (
           <Card
             key={p.id}
@@ -31,7 +31,8 @@ export function Featured({ featured }: ProductsProps) {
             style={{ backgroundImage: `url(${p.image[0].url})` }}
             className={cn(
               " h-60 bg-cover min-w-20 text-white bg-center rounded-xl bg-no-repeat flex p-0",
-              i == 0 && " col-span-2 row-span-2 h-full",
+              i == 1 && " md:col-span-2 md:row-span-2 h-full",
+              i == 1 && " row-span-2 h-full md:row-span-1",
               i == 3 && "col-span-2"
             )}
           >

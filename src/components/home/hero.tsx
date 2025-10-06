@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <div className="h-[85dvh] w-full flex relative">
+    <div className="h-[36rem] md:h-[85dvh] w-full flex relative">
       <img
         src="/banner.jpg"
         alt="banner"

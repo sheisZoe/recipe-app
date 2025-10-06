@@ -16,8 +16,8 @@ export default function Footer() {
   return (
     <footer className=" sm:py-8 bg-accent border-t border-border ">
       <div className=" p-4 space-y-8">
-        <div className="flex justify-between gap-8">
-          <div className=" flex flex-col flex-1 w-[40%] gap-4 md:gap-8">
+        <div className="flex flex-col md:flex-row md:justify-between gap-8">
+          <div className=" flex flex-col flex-1 md:w-[40%] gap-4 md:gap-8">
             <h1 className=" text-green-500 uppercase text-2xl md:text-4xl font-bold">
               Recipy
             </h1>

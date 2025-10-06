@@ -41,6 +41,7 @@ export async function getHomeProducts() {
           take: 1,
         },
       },
+      take: 4
     });
     return {
       featured,

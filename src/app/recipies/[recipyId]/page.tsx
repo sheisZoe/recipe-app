@@ -32,7 +32,7 @@ export default async function Recipy({ params }: Props) {
         </p>
       </div>
     );
-  const relatedPromise = await getRelatedProducts(data.name);
+  // const relatedPromise = await getRelatedProducts(data.name);
   return (
     <div className=" flex flex-col gap-8 py-4 px-8 w-full max-w-[1500px] mx-auto">
       <Header />
@@ -61,7 +61,7 @@ export default async function Recipy({ params }: Props) {
 
       {/* Instructions */}
       <InstructionsSection instructions={data.instructions} />
-      <Related relatedPromise={relatedPromise} />
+      {/* <Related relatedPromise={relatedPromise} /> */}
       <Footer />
     </div>
   );
