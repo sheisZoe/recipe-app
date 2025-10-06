@@ -37,6 +37,6 @@ export default async function favoriteHome() {
         ))}
       </div>
       <Footer />
-    </div>
+    </div> 
   );
 }
