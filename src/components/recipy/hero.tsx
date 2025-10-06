@@ -13,12 +13,7 @@ export function RecipyHero({ data }: Props) {
       <div className=" flex flex-col gap-4">
         <h1 className="text-xl md:text-3xl font-semibold">{data.name}</h1>
         <p className=" text-sm">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat,
-          non animi. Rem nisi ipsum expedita amet est blanditiis placeat eius
-          aspernatur repellendus aut, voluptates, pariatur veniam quibusdam,
-          corporis laboriosam magni praesentium recusandae repellat minima quas
-          nam qui minus sint? Ipsam illo architecto, amet id molestias iusto
-          enim corporis est consequuntur.
+          {data.description}
         </p>
         <div className="self-end flex gap-4 flex-wrap mt-auto">
           {data.tags?.map((t) => (
